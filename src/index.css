@@ -1,13 +1,31 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: #fcfcfc;
+}
+
+/** Leaflet Control **/
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1c1c1c !important;
+  color: #fff !important; /* text color */
+  border-radius: 8px;      /* optional */
+  box-shadow: none;        /* remove default shadow if you want */
+}
+
+/* The small triangular tip under popup */
+.leaflet-popup-tip {
+  background: #1c1c1c !important;
 }
